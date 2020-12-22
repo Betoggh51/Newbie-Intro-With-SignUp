@@ -1,0 +1,132 @@
+
+/********************************************* FrontEnd Mentor Styles  **************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.attribution{
+    margin: 3% 0;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.attribution a{
+    color: white;
+}
+
+/**********************************************  Standard Styles  *******************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/************************************************  Mobile Styles  *******************************************/
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-position: center;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.text-container{
+    text-align: center;
+    width: 90%;
+    height: 40%;
+    margin: 15% auto 0;
+    color: white;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+}
+
+.form-container{
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.common-price{
+    padding: 1rem 1.5rem;
+    margin: 10% 0;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.bold-price{
+    font-weight: 600;
+}
+
+.form{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 13px;
+}
+.input-container{
+    margin: 3% 0;
+
+}
+
+.input-and-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input, .submit-btn{
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #80808066;
+    outline: none;
+    margin: 3% 0;
+}
+
+.submit-btn{
+    padding-left: 0;
+    background-color: hsl(154, 59%, 51%);
+    border-style: none;
+    color: white;
+}
+
+.input::placeholder{
+    font-weight: 600;
+}
+
+.wrong-icon{
+    display: none;
+    margin-left: 2%;
+}
+
+.empty-message{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    color: hsl(0, 100%, 74%);
+    display: none;
+}
+
+.terms{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+
+.terms-span{
+    color: hsl(0, 100%, 74%);
+}
+
+
+/************************************************  Desktop Styles  ****************************************/
