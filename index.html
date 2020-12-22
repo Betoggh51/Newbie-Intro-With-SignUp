@@ -20,23 +20,50 @@
       </p>
     </div>
 
-    <div class="form-container .flex-col-center">
+    <div class="form-container">
       <div class="common-price">
         <p class="price"> <span class="bold-price"> Try it free 7 days </span> then $20/mo. thereafter </p>
       </div>
 
-      <form action="" class="form .flex-col-center">
-        <input type="text" class="first-name" placeholder="First Name">
-        <input type="text" class="last-name" placeholder="Last Name">
-        <input type="text" class="email-address" placeholder="Email Address">
-        <input type="text" class="password" placeholder="Password">
+      <form action="" class="form">
+        <div class="input-container">
+          <div class="input-and-icon">
+            <input type="text" class="first-name input" placeholder="First Name">
+            <img src="images/icon-error.svg" alt="Wrong First Name" class="wrong-icon wrong-icon-first-name">
+          </div>
+          <span class="empty-message">First Name cannot be empty</span>
+        </div>
+
+        <div class="input-container">
+          <div class="input-and-icon">
+            <input type="text" class="last-name input" placeholder="Last Name">
+            <img src="images/icon-error.svg" alt="Wrong Last Name" class="wrong-icon wrong-icon-last-name">
+          </div>
+          <span class="empty-message">Last Name cannot be empty</span>
+        </div>
+
+        <div class="input-container">
+          <div class="input-and-icon">
+            <input type="text" class="email-address input" placeholder="Email Address">
+            <img src="images/icon-error.svg" alt="Wrong Email Address" class="wrong-icon wrong-icon-email">
+          </div>
+          <span class="empty-message">Email Address cannot be empty</span>
+        </div>
+
+        <div class="input-container">
+          <div class="input-and-icon">
+            <input type="text" class="password input" placeholder="Password">
+            <img src="images/icon-error.svg" alt="Wrong Password" class="wrong-icon wrong-icon-password">
+          </div>
+          <span class="empty-message">Password cannot be empty</span>
+        </div>
 
         <button class="submit-btn">
-          <span class="claim">  Claim your free trial </span>
+          <span class="claim">  CLAIM YOUR FREE TRIAL </span>
         </button>
 
         <p class="terms">
-          By clicking the button, you are agreeing to our Terms and Services
+          By clicking the button, you are agreeing to our <span class="terms-span"> Terms and Services </span>
         </p>
       </form>
     </div>
