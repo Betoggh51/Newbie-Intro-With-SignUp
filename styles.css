@@ -128,5 +128,65 @@ body{
     color: hsl(0, 100%, 74%);
 }
 
+.footer-desktop{
+    display: none;
+}
 
 /************************************************  Desktop Styles  ****************************************/
+@media only screen and (min-width: 900px){
+    .main-container{
+        display: flex;
+        
+    }
+
+    .title{
+        width: 90%;
+        font-size: 3rem;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .description{
+        width: 85%;
+        margin: 0 0 0 auto;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .common-price, .form{
+        width: 70%;
+    }
+
+    .common-price{
+        margin: 10% 0 2%;
+    }
+
+    .input{
+        margin: 1% 0;
+    }
+
+    .footer-desktop{
+        display: inherit;
+        margin: 5% auto;
+    }
+
+    .footer-mobile{
+        display: none;
+    }
+
+    
+}
+
+
+/* The only way I found to maintain responsiveness between sizes for the tile...     */
+@media only screen and (min-width: 1100px){
+    .title{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .title{
+        width: 63%;
+    }
+}
