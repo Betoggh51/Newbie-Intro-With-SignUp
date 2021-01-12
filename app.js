@@ -4,7 +4,12 @@ let email = document.getElementById('email');
 let password = document.getElementById('password');
 let form = document.getElementById('form');
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (event) => {
+    if(password.value === '' || password.value == null || email.value === '' || email.value == null ||
+    lastName.value === '' || lastName.value == null || firstName.value === '' || firstName.value == null) {
+       event.preventDefault();
+    }
+
     if(firstName.value === '' || firstName.value == null){
         let firstNameWrongIcon = document.getElementById('first-name-error-icon');
         let firstNameErrorMessage = document.getElementById('first-name-error-message');
@@ -23,7 +28,7 @@ form.addEventListener('submit', () => {
 
     if(email.value === '' || email.value == null){
         let emailWrongIcon = document.getElementById('email-error-icon');
-        let emailErrorMessage = document.getElementById('emailerror-message');
+        let emailErrorMessage = document.getElementById('email-error-message');
 
         emailWrongIcon.style.display = 'initial';
         emailErrorMessage.style.display = 'initial';
@@ -36,6 +41,4 @@ form.addEventListener('submit', () => {
         passwordWrongIcon.style.display = 'initial';
         passwordErrorMessage.style.display = 'initial';
     }
-
-    
 })
