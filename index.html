@@ -25,40 +25,40 @@
         <p class="price"> <span class="bold-price"> Try it free 7 days </span> then $20/mo. thereafter </p>
       </div>
 
-      <form action="" class="form">
+      <form action="" class="form" id="form">
         <div class="input-container">
           <div class="input-and-icon">
-            <input type="text" class="first-name input" placeholder="First Name">
-            <img src="images/icon-error.svg" alt="Wrong First Name" class="wrong-icon wrong-icon-first-name">
+            <input type="text" class="first-name input" placeholder="First Name" id="first-name">
+            <img src="images/icon-error.svg" alt="Wrong First Name" class="wrong-icon" id="first-name-error-icon">
           </div>
-          <span class="empty-message">First Name cannot be empty</span>
+          <span class="empty-message" id="first-name-error-message">First Name cannot be empty</span>
         </div>
 
         <div class="input-container">
           <div class="input-and-icon">
-            <input type="text" class="last-name input" placeholder="Last Name">
-            <img src="images/icon-error.svg" alt="Wrong Last Name" class="wrong-icon wrong-icon-last-name">
+            <input type="text" class="last-name input" placeholder="Last Name" id="last-name">
+            <img src="images/icon-error.svg" alt="Wrong Last Name" class="wrong-icon" id="last-name-error-icon">
           </div>
-          <span class="empty-message">Last Name cannot be empty</span>
+          <span class="empty-message" id="last-name-error-message">Last Name cannot be empty</span>
         </div>
 
         <div class="input-container">
           <div class="input-and-icon">
-            <input type="text" class="email-address input" placeholder="Email Address">
-            <img src="images/icon-error.svg" alt="Wrong Email Address" class="wrong-icon wrong-icon-email">
+            <input type="text" class="email-address input" placeholder="Email Address" id="email">
+            <img src="images/icon-error.svg" alt="Wrong Email Address" class="wrong-icon" id="email-error-icon">
           </div>
-          <span class="empty-message">Email Address cannot be empty</span>
+          <span class="empty-message" id="email-error-message">Email Address cannot be empty</span>
         </div>
 
         <div class="input-container">
           <div class="input-and-icon">
-            <input type="text" class="password input" placeholder="Password">
-            <img src="images/icon-error.svg" alt="Wrong Password" class="wrong-icon wrong-icon-password">
+            <input type="text" class="password input" placeholder="Password" id="password">
+            <img src="images/icon-error.svg" alt="Wrong Password" class="wrong-icon" id="password-error-icon">
           </div>
-          <span class="empty-message">Password cannot be empty</span>
+          <span class="empty-message" id="password-error-message">Password cannot be empty</span>
         </div>
 
-        <button class="submit-btn">
+        <button class="submit-btn" onclick="validate()">
           <span class="claim">  CLAIM YOUR FREE TRIAL </span>
         </button>
 
@@ -69,12 +69,19 @@
     </div>
 
     <footer>
-      <p class="attribution">
+      <p class="attribution footer-mobile">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/Betoggh51/Newbie-Intro-With-SignUp.git" target="_blank">Beto</a>.
       </p>
     </footer>
   </div>
+  
+  <footer>
+    <p class="attribution footer-desktop">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Betoggh51/Newbie-Intro-With-SignUp.git" target="_blank">Beto</a>.
+    </p>
+  </footer>
 
   <script src="app.js" type="text/javascript"></script>
 </body>
