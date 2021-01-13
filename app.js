@@ -42,3 +42,5 @@ form.addEventListener('submit', (event) => {
         passwordErrorMessage.style.display = 'initial';
     }
 })
+
+// tengo que arreglar algo. Si lleno 2 inputs, el mensaje de error salta en todos
